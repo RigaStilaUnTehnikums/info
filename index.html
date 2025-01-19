@@ -1,17 +1,25 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rigas Stila un modes tehnikums</title>
+    <title>Rīgas Stila un modes tehnikums</title>
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s" type="image/png">
+    <link rel="apple-touch-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+    <link rel="icon" sizes="192x192" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+    <link rel="icon" sizes="512x512" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQopu927OhDNTuSDWUMXeYFvfIU7imp-F5phA&s">
+
     <style>
         body {
             background-color: red;
             margin: 0; 
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             height: 1000px;
+            font-size: 1.5vw;
         }
+        
         #Main {
-            background-color: rgb(215, 215, 215);
+            background-color: white;
             padding: 10px; 
             position: sticky; 
             top: 0; 
@@ -19,7 +27,6 @@
             z-index: 1000;
         }
         #upper {
-
             display: flex;
             align-items: center; 
             padding: 10px;
@@ -38,23 +45,25 @@
             margin: 0; 
             font-size: 1.5rem;
         }
-        #homebtn, #languagebtn, #loginbtn{
+        #homebtn, #languagebtn, #loginbtn {
             border-style: solid;
-            height: 40px;
-            width: 70px;
+            height: 6.8vh;
+            width: 6.4vw;
             border-width: 1px;
             background-color: transparent;
             transition: 0.2s;
+            font-size: 1vw;
         }
-        #substitution, #timetable{
+        #substitution, #timetable {
             border-style: solid;
-            height: 40px;
-            width: auto;
+            height: 6.8vh;
+            width: 6.4vw;
+            font-size: 1vw;
             border-width: 1px;
-            background-color: rgb(215, 215, 215);
+            background-color: white;
             transition: 0.2s;
         }
-        #homebtn:hover, #languagebtn:hover, #loginbtn:hover, #substitution:hover, #timetable:hover{
+        #homebtn:hover, #languagebtn:hover, #loginbtn:hover, #substitution:hover, #timetable:hover {
             cursor: pointer;
             border-color: red;
             color: white;
@@ -65,13 +74,13 @@
             flex-direction: column;
             align-items: center; 
             height: auto; 
-            width: 90%;
+            width: 91vw;
             max-width: 100%; 
             margin: 0 auto;
             background-color: transparent;
             border-style: solid;
             border-width: 1.5px;
-            border-color: rgb(215, 215, 215);
+            border-color: white;
             margin-top: 50px;
             padding-bottom: 50px;
             border-radius: 10px;
@@ -84,68 +93,43 @@
             margin-bottom: 20px;
         }
         #navigation {
-            background-color: rgb(215, 215, 215);
-            height: 360px;
-            width: 23.1%;
+            background-color: white;
+            height: 60.5vh;
+            width: 23vw;
             max-width: 23.1%;
             margin-left: 20px;
             margin-top: 20px;
             border-radius: 6px;
         }
-        #images {
-            width: 49%;
-            max-width: 55%;
-            height: 360px;
+        #youtubevideo {
+            width: 49.2%;
+            max-width: 49.2%;
+            height: 60.5vh;
             position: relative; 
             margin-left: 20px;
             overflow: hidden;
             margin-top: 20px;
             border-radius: 6px;
             z-index: 1;
+            display: inline-block;
         }
-        #imgs, #imgs2, #imgs3, #imgs4 {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            transition: transform 1s ease;
-        }
-        #left-arrow, #right-arrow {
-            position: absolute;
-            top: 50%; 
-            transform: translateY(-50%); 
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-        }
-        #left-arrow {
-            left: 0; 
-        }
-        #right-arrow {
-            right: 0; 
-        }
-        #left-arrow:hover, #right-arrow:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        #btn{
+        #btn {
             display: block;
-            height: 54px;
-            width: 100%;
-            max-width: 95%;
+            height: 9vh;
+            width: 100vw;
+            max-width: 20.1vw;
             margin: 5px;
             background-color: transparent;
             border-style: solid;
             border-width: 1.7px;
             border-color: black;
-            font-weight:400;
+            font-weight: 400;
             transition: 0.1s;
             border-radius: 4px;
             color: black;
+            font-size: 1.4vw;
         }
-        #btn:hover{
+        #btn:hover {
             border-color: black;
             color: white;
             background-color: black;
@@ -153,35 +137,38 @@
         }
         #updatesdiv {
             align-items: center;
-            background-color: rgb(215, 215, 215);
-            height: 360px;
+            background-color: white;
+            height: 60.5vh;
             width: 20.5%;
-            max-width: 25%;
+            max-width: 20.5%;
             text-align: center;
             margin-left: 20px;
             margin-top: 20px;
             border-radius: 6px;
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center;
+            font-size: 1.3vw;
         }
         #contact {
-            height: 200px;
-            width: 95.6%;
-            max-width: 95.6%;
-            background-color: rgb(215, 215, 215);
+            height: 15%;
+            width: 85%;
+            max-width: 93.1;
+            background-color: white;
             margin-top: 20px;
             color: black;
             text-align: center;
-            padding: 0px;
+            padding: 20px;
             border-radius: 6px;
-            text-align: center;
         }
-        #span1{
-            color: brown;
+        #span1 {
+            color: black;
         }
-        #span2{
-            color: rgb(255, 96, 96);
+        #span2 {
+            color: black;
         }
-        #span3, #updatep, #span4{
-            color: brown;
+        #span3, #updatep, #span4 {
+            color: black;
         }
         #paragraph1{
             margin-left: 50px;
@@ -190,19 +177,22 @@
             margin-top: 100px;
         }
         #enddiv{
-            background-color: rgb(215, 215, 215);
+            background-color: white;
             width: 100%;
-            height: 200px;
+            height: 40vh;
             margin-top: 50px;
             padding-left: 0px;
             padding-top: 20px;
-
         } 
-        #item{
+        #item {
             margin-left: 50px;
         }
-        #cncdiv, #phtdiv, #updtdiv{
+        #cncdiv, #phtdiv, #updtdiv {
             display: inline-block;
+        }
+        #hrefid{
+            width: 0px;
+            color: transparent;
         }
     </style>
 </head>
@@ -211,116 +201,132 @@
         <div id="upper">
             <div id="logo-container">
                 <img id="rigalogo" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas.jpg" alt="Logo">
-                <h3 id="header3">Rīgas Stila un modes tehnikums</h3>
+                <h3 id="header3" data-eng="Rīgas Stila un modes tehnikums" data-lv="Rīgas Stila un modes tehnikums">Rīgas Stila un modes tehnikums</h3>
             </div>
             <div>
-                <button id="homebtn">Home</button>
-                <button id="languagebtn">ENG</button>
-                <button id="loginbtn">Login</button> 
-                <button id="timetable">Timetable</button>
-                <button id="substitution">Substitution</button>
+                <a id="hrefid" href="https://rigastilauntehnikums.github.io/info/">
+                    <button id="homebtn" data-eng="Home" data-lv="Sākums">Home</button>
+                </a>
+                <button id="languagebtn" data-eng="ENG" data-lv="LV">ENG</button>
+                <button id="loginbtn" data-eng="Login" data-lv="Pieteikties">Login</button> 
+                <button id="timetable" data-eng="Timetable" data-lv="Stundas">Timetable</button>
+                <button id="substitution" data-eng="Substitution" data-lv="Aizvietošana">Substitution</button>
             </div>
         </div>
     </div>
     <div id="lower">
         <div class="content-row">
             <div id="navigation">
-                <button id="btn">Home page</button>
-                <button id="btn">News</button>
-                <button id="btn">Timetable</button>
-                <button id="btn">Substitution</button>
-                <button id="btn">Contact</button>
-                <button id="btn">Login</button>
+                <a id="hrefid" href="https://rigastilauntehnikums.github.io/info/">
+                    <button id="btn" data-eng="Home page" data-lv="Sākumlapa">Home page</button>
+                </a>
+                <button id="btn" data-eng="News" data-lv="Jaunumi">News</button>
+                <button id="btn" data-eng="Timetable" data-lv="Stundas">Timetable</button>
+                <button id="btn" data-eng="Substitution" data-lv="Aizvietošana">Substitution</button>
+                <button id="btn" data-eng="Contact" data-lv="Kontakti">Contact</button>
+                <button id="btn" data-eng="Login" data-lv="Pieteikties">Login</button>
             </div>
-            <div id="images">
-                <button id="left-arrow">&#8592;</button>
-                <button id="right-arrow">&#8594;</button>
-                <img id="imgs" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas1.jpg" alt="">
-                <img id="imgs2" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas2.jpg" alt="">
-                <img id="imgs3" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas3.jpg" alt="">
-                <img id="imgs4" src="https://raw.githubusercontent.com/RigaStilaUnTehnikums/info/main/rigas4.jpg" alt="">
+            <div id="youtubevideo">
+                <iframe width="100%" height="100%" 
+                src="https://www.youtube.com/embed/qjJ3ulzH82U?autoplay=1&mute=1&controls=0&loop=1&playlist=qjJ3ulzH82U" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
             </div>
             <div id="updatesdiv">
-                <h3>Updates</h3>
-                <br>
+                <h3 data-eng="Updates" data-lv="Jaunumi">Updates</h3>
                 <p>-V1.3 18.01.2025</p>
-                <p id="">-V1.2 17.01.2025</p>
-                <p id="">-Created 10.01.2025</p>
+                <p>-V1.2 17.01.2025</p>
+                <p>-Created 10.01.2025</p>
             </div>
         </div>
         <div id="contact">
-            <h3>Contact Information</h3>
-            <p>Address: <span id="span1">Rīgas Stila un modes tehnikums, Ūdeļu 22, Rīga, Latvia
-            </span> <span id="span2">[Your school address]</span></p>
-                <p>Tel.: <span id="span3">(+12) 34-567-890 </span></p> 
+            <h3 data-eng="Contact Information" data-lv="Kontaktinformācija">Contact Information</h3>
+            <p data-eng="Address: Rīgas Stila un modes tehnikums, Ūdeļu 22, Rīga, Latvia [Your school address]" 
+               data-lv="Adrese: Rīgas Stila un modes tehnikums, Ūdeļu 22, Rīga, Latvija [Jūsu skolas adrese]">
+               Address: <span id="span1">Rīgas Stila un modes tehnikums, Ūdeļu 22, Rīga, Latvia</span> <span id="span2">[Your school address]</span></p>
+            <p data-eng="Tel.: (+12) 34-567-890" data-lv="Tālrunis: (+12) 34-567-890">Tel.: <span id="span3">(+12) 34-567-890 </span></p> 
         </div>
     </div>
     <div id="enddiv">
         <div id="cncdiv">
-            <h3 id="paragraph1">Contact</h3>
-            <span id="item">Address: <span id="span4">Ūdeļu iela 22, Rīga, Latvija, LV - 1064</span></span>
+            <h3 id="paragraph1" data-eng="Contact" data-lv="Kontakti">Contact</h3>
+            <span id="item" data-eng="Address: Ūdeļu iela 22, Rīga, Latvija, LV - 1064" data-lv="Adrese: Ūdeļu iela 22, Rīga, Latvija, LV - 1064">Address: <span id="span4">Ūdeļu iela 22, Rīga, Latvija, LV - 1064</span></span>
             <br><br>
-            <span id="item">Reception Hotline: <span id="span4">27706214, 20140052</span></span>
+            <span id="item" data-eng="Reception Hotline: 27706214, 20140052" data-lv="Reģistratūras karstā līnija: 27706214, 20140052">Reception Hotline: <span id="span4">27706214, 20140052</span></span>
             <br><br>
-            <span id="item">E-mail: <span id="span4">rsmt@rsmt.lv, uznemsana@rsmt.lv</span></span>
+            <span id="item" data-eng="E-mail: rsmt@rsmt.lv, uznemsana@rsmt.lv" data-lv="E-pasts: rsmt@rsmt.lv, uznemsana@rsmt.lv">E-mail: <span id="span4">rsmt@rsmt.lv, uznemsana@rsmt.lv</span></span>
         </div>
         <div id="updtdiv"> 
-            <h3 id="paragraph1">Updates</h3>
-            <span id="item">18.01.2025: <span id="span4">V1.3</span></span>
+            <h3 id="paragraph1" data-eng="Updates" data-lv="Jaunumi">Updates</h3>
+            <span id="item" data-eng="18.01.2025: V1.3" data-lv="18.01.2025: V1.3">18.01.2025: <span id="span4">V1.3</span></span>
             <br><br>
-            <span id="item">17.01.2025: <span id="span4">V1.2</span></span>
+            <span id="item" data-eng="17.01.2025: V1.2" data-lv="17.01.2025: V1.2">17.01.2025: <span id="span4">V1.2</span></span>
             <br><br>
-            <span id="item">10.01.2025: <span id="span4">V1.1</span></span>
+            <span id="item" data-eng="10.01.2025: V1.1" data-lv="10.01.2025: V1.1">10.01.2025: <span id="span4">V1.1</span></span>
         </div>
         <div id="phtdiv"> 
-            <h3 id="paragraph1">Photogallery</h3>
+            <h3 id="paragraph1" data-eng="Photogallery" data-lv="Foto galerija">Photogallery</h3>
             <br><br><br><br><br>
         </div>
     </div>
-
     <script>
-        let img1 = document.getElementById("imgs");
-        let img2 = document.getElementById("imgs2");
-        let img3 = document.getElementById("imgs3");
-        let img4 = document.getElementById("imgs4");
-
-        let images = [img1, img2, img3, img4];
-        let currentImageIndex = 0;
-        let autoSlideInterval;
-
-        function showImage(index) {
-            images.forEach((img, i) => {
-                img.style.transform = `translateX(${(i - index) * 100}%)`;
+        document.getElementById('languagebtn').addEventListener('click', function () {
+            let isEnglish = this.innerText === 'ENG';
+            
+            document.querySelectorAll('[data-eng]').forEach(function (element) {
+                if (isEnglish) {
+                    element.textContent = element.getAttribute('data-lv');
+                } else {
+                    element.textContent = element.getAttribute('data-eng');
+                }
+            });
+            
+            updateSpanColors();
+        
+            this.innerText = isEnglish ? 'LV' : 'ENG';
+        });
+        
+        function updateSpanColors() {
+            document.querySelectorAll('span').forEach(function (span) {
+                const color = span.getAttribute('data-color');
+                if (color) {
+                    span.style.color = color;
+                }
             });
         }
-
-        showImage(currentImageIndex);
-
-        function resetAutoSlide() {
-            clearInterval(autoSlideInterval);
-            startAutoSlide();
+        
+        function initializeSpanColors() {
+            document.querySelectorAll('span').forEach(function (span) {
+                if (!span.hasAttribute('data-color')) {
+                    let color = '';
+        
+                    if (span.id === 'span1') {
+                        color = 'black';
+                    } else if (span.id === 'span2') {
+                        color = 'back';
+                    } else if (span.id === 'span3') {
+                        color = 'black';
+                    } else if (span.id === 'span4') {
+                        color = 'black';
+                    }
+        
+                    if (color) {
+                        span.setAttribute('data-color', color);
+                        span.style.color = color; 
+                    }
+                }
+            });
         }
+        
+        initializeSpanColors();
 
-        function startAutoSlide() {
-            autoSlideInterval = setInterval(function() {
-                currentImageIndex = (currentImageIndex + 1) % images.length;
-                showImage(currentImageIndex);
-            }, 3000);
-        }
-
-        document.getElementById("left-arrow").addEventListener('click', function() {
-            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-            showImage(currentImageIndex);
-            resetAutoSlide();
-        });
-
-        document.getElementById("right-arrow").addEventListener('click', function() {
-            currentImageIndex = (currentImageIndex + 1) % images.length;
-            showImage(currentImageIndex);
-            resetAutoSlide();
-        });
-
-        startAutoSlide();
-    </script>
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      window.location.href = "https://google.com"; // Change to your mobile URL
+    }
+        </script>
+        
+        
 </body>
 </html>
